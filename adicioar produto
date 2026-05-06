@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #F8FBF4;
+  color: #1A461A;
+}
+
+.container {
+  max-width: 375px;
+  height: 812px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px 16px;
+}
+
+.header button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+
+.header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: -40px;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.image-circle {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: #E9F2E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-circle img {
+  width: 200px;
+}
+
+.form {
+  padding: 0 20px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  color: #3E5C3E;
+}
+
+.input {
+  height: 52px;
+  background: white;
+  border-radius: 12px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #E2E8F0;
+}
+
+.input.space-between {
+  justify-content: space-between;
+}
+
+.button {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  height: 56px;
+  background: #387D39;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="header">
+    <button>
+      <iconify-icon icon="lucide:chevron-left" width="28"></iconify-icon>
+    </button>
+    <h1>Adicionar Produto</h1>
+  </div>
+
+  <div class="image-box">
+    <div class="image-circle">
+      <img src="https://storage.googleapis.com/banani-generated-images/generated-images/735ed6eb-fcb5-4a96-b33f-6b44741af7bf.jpg">
+    </div>
+  </div>
+
+  <div class="form">
+
+    <div class="field">
+      <label class="label">Nome do produto</label>
+      <div class="input">Leite Integral</div>
+    </div>
+
+    <div class="field">
+      <label class="label">Data de validade</label>
+      <div class="input space-between">
+        <span>15/05/2025</span>
+        <iconify-icon icon="lucide:calendar" width="20"></iconify-icon>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="button">Salvar Produto</button>
+
+</div>
+</body>
+</html>
